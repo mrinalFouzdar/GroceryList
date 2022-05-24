@@ -11,11 +11,10 @@ export default function GroceryList() {
     })
 
     const [groceryData,setGroceryData]=useState(null)
-    const [edit,setEdit]=useState(true)
 
     const handleChange=(e)=>{
         console.log("e", e.target.value);
-        const {id,value,type}=e.target
+        const {id,value}=e.target
         setFormData({
             ...formData,
             [id]:value
@@ -23,7 +22,7 @@ export default function GroceryList() {
     }
     const  handlepostGrocery = (e)=>{
         e.preventDefault()
-        console.log(formData);
+        // console.log(formData);
         if(formData.name.length<=2 || typeof(formData.qty)!== Number || formData.price==="" ){
             return 
         }
@@ -171,3 +170,4 @@ aa
 // when a user lands on the page, use componentDidMount
 // create pagination
 // use componentDidUpdate to see if the page number has changed and make a request to get new data for the page based on page number
+
