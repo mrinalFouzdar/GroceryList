@@ -1,0 +1,22 @@
+{
+  "grocerylis": [
+    {
+      "name": "rice",
+      "qty": "60",
+      "price": "12",
+      "description": "mamma",
+      "image": "",
+      "true": true,
+      "id": 1
+    },
+    {
+      "name": "a",
+      "qty": "8",
+      "price": "1",
+      "description": "aa",
+      "image": "",
+      "true": true,
+      "id": 2
+    }
+  ]
+}
